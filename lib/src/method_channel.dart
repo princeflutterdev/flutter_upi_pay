@@ -1,6 +1,6 @@
 import 'package:universal_io/io.dart' as io;
 import 'package:flutter/services.dart';
-import 'package:upi_pay/src/transaction_details.dart';
+import 'package:flutter_upi_pay/src/transaction_details.dart';
 
 class UpiMethodChannel {
   MethodChannel _channel = MethodChannel('upi_pay');

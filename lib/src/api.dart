@@ -1,15 +1,15 @@
 import 'dart:async';
 
 // for meta
-import 'package:upi_pay/src/discovery.dart';
-import 'package:upi_pay/src/meta.dart';
-import 'package:upi_pay/src/method_channel.dart';
-import 'package:upi_pay/src/response.dart';
-import 'package:upi_pay/src/status.dart';
-import 'package:upi_pay/src/applications.dart';
-import 'package:upi_pay/src/exceptions.dart';
-import 'package:upi_pay/src/transaction.dart';
-import 'package:upi_pay/src/transaction_details.dart';
+import 'package:flutter_upi_pay/src/discovery.dart';
+import 'package:flutter_upi_pay/src/meta.dart';
+import 'package:flutter_upi_pay/src/method_channel.dart';
+import 'package:flutter_upi_pay/src/response.dart';
+import 'package:flutter_upi_pay/src/status.dart';
+import 'package:flutter_upi_pay/src/applications.dart';
+import 'package:flutter_upi_pay/src/exceptions.dart';
+import 'package:flutter_upi_pay/src/transaction.dart';
+import 'package:flutter_upi_pay/src/transaction_details.dart';
 
 /// Helps with getting installed UPI apps and making payments using them.
 ///

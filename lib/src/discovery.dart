@@ -1,10 +1,10 @@
 import 'dart:convert';
 
 import 'package:universal_io/io.dart' as io;
-import 'package:upi_pay/src/applications.dart';
-import 'package:upi_pay/src/method_channel.dart';
-import 'package:upi_pay/src/status.dart';
-import 'package:upi_pay/src/meta.dart';
+import 'package:flutter_upi_pay/src/applications.dart';
+import 'package:flutter_upi_pay/src/method_channel.dart';
+import 'package:flutter_upi_pay/src/status.dart';
+import 'package:flutter_upi_pay/src/meta.dart';
 
 class UpiApplicationDiscovery implements _PlatformDiscoveryBase {
   final discovery = io.Platform.isAndroid

@@ -2,7 +2,7 @@ import 'dart:io';
 import 'dart:math';
 
 import 'package:flutter/material.dart';
-import 'package:upi_pay/upi_pay.dart';
+import 'package:flutter_upi_pay/upi_pay.dart';
 
 void main() => runApp(App());
 
@@ -12,7 +12,7 @@ class App extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: Text('UPI Pay'),
+          title: Text('Flutter UPI Pay'),
         ),
         body: Screen(),
       ),

@@ -1,4 +1,4 @@
-group 'com.drenther.upi_pay'
+group 'com.trident.flutter_upi_pay'
 version '1.0-SNAPSHOT'
 
 buildscript {

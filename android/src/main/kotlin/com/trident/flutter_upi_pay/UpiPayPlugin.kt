@@ -1,4 +1,4 @@
-package com.drenther.upi_pay
+package com.trident.flutter_upi_pay
 
 import android.app.Activity
 import android.content.Intent
@@ -79,7 +79,7 @@ class UpiPayPlugin: FlutterPlugin, MethodCallHandler, ActivityAware, PluginRegis
       }
       uriStr += "&mode=00" // &orgid=000000"
       val uri = Uri.parse(uriStr)
-      // Log.d("upi_pay", "initiateTransaction URI: " + uri.toString())
+      // Log.d("flutter_upi_pay", "initiateTransaction URI: " + uri.toString())
 
       val intent = Intent(Intent.ACTION_VIEW, uri)
       intent.setPackage(app)
@@ -92,7 +92,7 @@ class UpiPayPlugin: FlutterPlugin, MethodCallHandler, ActivityAware, PluginRegis
       activity?.startActivityForResult(intent, requestCodeNumber)
 
     } catch (ex: Exception) {
-      Log.e("upi_pay", ex.toString())
+      Log.e("flutter_upi_pay", ex.toString())
       this.success("failed_to_open_app")
     }
   }
@@ -127,7 +127,7 @@ class UpiPayPlugin: FlutterPlugin, MethodCallHandler, ActivityAware, PluginRegis
 
       result?.success(activityResponse)
     } catch (ex: Exception) {
-      Log.e("upi_pay", ex.toString())
+      Log.e("flutter_upi_pay", ex.toString())
       result?.error("getInstalledUpiApps", "exception", ex)
     }
   }
@@ -172,7 +172,7 @@ class UpiPayPlugin: FlutterPlugin, MethodCallHandler, ActivityAware, PluginRegis
 
 
   override fun onAttachedToEngine(@NonNull flutterPluginBinding: FlutterPlugin.FlutterPluginBinding) {
-    channel = MethodChannel(flutterPluginBinding.binaryMessenger, "upi_pay")
+    channel = MethodChannel(flutterPluginBinding.binaryMessenger, "flutter_upi_pay")
     channel.setMethodCallHandler(this)
   }
 
