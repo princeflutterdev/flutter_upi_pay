@@ -4,15 +4,15 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=no">
-  <meta name="generator" content="made with love by dartdoc 0.44.0">
-  <meta name="description" content="upi_pay API docs, for the Dart programming language.">
-  <title>upi_pay - Dart API docs</title>
+  <meta name="generator" content="made with love by dartdoc 6.2.2">
+  <meta name="description" content="flutter_upi_india API docs, for the Dart programming language.">
+  <title>flutter_upi_india - Dart API docs</title>
 
 
   
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" rel="stylesheet">
   
   <link rel="stylesheet" href="static-assets/github.css?v1">
   <link rel="stylesheet" href="static-assets/styles.css?v1">
@@ -22,40 +22,62 @@
 </head>
 
 
-<body data-base-href=""
-      data-using-base-href="false">
+<body data-base-href="" data-using-base-href="false" class="light-theme">
 
 <div id="overlay-under-drawer"></div>
 
 <header id="title">
-  <button id="sidenav-left-toggle" type="button">&nbsp;</button>
+  <span id="sidenav-left-toggle" class="material-symbols-outlined" role="button" tabindex="0">menu</span>
   <ol class="breadcrumbs gt-separated dark hidden-xs">
-    <li><a href="https://github.com/drenther/upi_pay">upi_pay package</a></li>
+    <li><a href="https://github.com/princeflutterdev/flutter_upi_india">flutter_upi_india package</a></li>
   </ol>
-  <div class="self-name">upi_pay</div>
+  <div class="self-name">flutter_upi_india</div>
   <form class="search navbar-right" role="search">
     <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
   </form>
+  <div class="toggle" id="theme-button">
+    <label for="theme">
+      <input type="checkbox" id="theme" value="light-theme">
+      <span id="dark-theme-button" class="material-symbols-outlined">
+        brightness_4
+      </span>
+      <span id="light-theme-button" class="material-symbols-outlined">
+        brightness_5
+      </span>
+    </label>
+  </div>
 </header>
-
 <main>
-
 
   <div id="dartdoc-main-content" class="main-content">
       
 <section class="desc markdown">
-  <h1 id="upi_pay">upi_pay</h1>
+  <h1 id="flutter_upi_india">flutter_upi_india</h1>
+<h2 id="versionhttpsimgshieldsiopubvflutter_upi_indiahttpspubdevpackagesflutter_upi_india"><a href="https://pub.dev/packages/flutter_upi_india"><img src="https://img.shields.io/pub/v/flutter_upi_india" alt="version"></a></h2>
 <p>Find installed UPI payment apps on your phone and make payments using any one of them.</p>
-<p>Package implements <a href="https://github.com/reeteshranjan/upi_pay/files/6338127/UPI.Linking.Specs_ver.1.6.pdf">UPI Deep Linking And Proximity Integration Specification</a>.</p>
-<table><thead><tr><th>Android</th><th>iOS</th></tr></thead><tbody><tr><td><img src="https://user-images.githubusercontent.com/5516599/115283164-a4e3df00-a168-11eb-878b-c3dbe6e53aa7.gif" alt="Android Screen Capture"></td><td><img src="https://user-images.githubusercontent.com/5516599/115283187-aa412980-a168-11eb-9c03-5ae8dce30d78.gif" alt="IOS Screen Capture"></td></tr></tbody></table>
+<p>Package implements <a href="https://github.com/reeteshranjan/flutter_upi_india/files/6338127/UPI.Linking.Specs_ver.1.6.pdf">UPI Deep Linking And Proximity Integration Specification</a>.</p>
+<table>
+<thead>
+<tr>
+<th>Android</th>
+<th>iOS</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img src="https://user-images.githubusercontent.com/5516599/115283164-a4e3df00-a168-11eb-878b-c3dbe6e53aa7.gif" alt="Android Screen Capture"></td>
+<td><img src="https://user-images.githubusercontent.com/5516599/115283187-aa412980-a168-11eb-9c03-5ae8dce30d78.gif" alt="IOS Screen Capture"></td>
+</tr>
+</tbody>
+</table>
 <h2 id="getting-started">Getting Started</h2>
 <p>Add this package to your flutter project's <code>pubspec.yaml</code> as a dependency as follows:</p>
 <pre class="language-yaml"><code class="language-yaml">dependencies:
   ...
-  upi_pay: ^1.0.0
+  flutter_upi_india: ^0.0.1
 </code></pre>
 <p>Import the package as follows:</p>
-<pre class="language-dart"><code class="language-dart">import 'package:upi_pay/upi_pay.dart';
+<pre class="language-dart"><code class="language-dart">import 'package:flutter_upi_india/flutter_upi_india.dart';
 </code></pre>
 <h3 id="ios-configuration">iOS configuration</h3>
 <p>In <code>Runner/Info.plist</code> add or modify the <code>LSApplicationQueriesSchemes</code> key so it includes custom query schemes shown as follows:</p>
@@ -114,7 +136,7 @@
 <h3 id="android">Android</h3>
 <h4 id="flow">Flow</h4>
 <ul>
-<li>On Android, the <a href="https://github.com/reeteshranjan/upi_pay/files/6338127/UPI.Linking.Specs_ver.1.6.pdf">UPI Deep Linking And Proximity Integration Specification</a> is implemented using Intents.</li>
+<li>On Android, the <a href="https://github.com/reeteshranjan/flutter_upi_india/files/6338127/UPI.Linking.Specs_ver.1.6.pdf">UPI Deep Linking And Proximity Integration Specification</a> is implemented using Intents.</li>
 <li>An Intent call with transaction request parameters includes the specific UPI app to be invoked.</li>
 <li>Post the UPI transaction being processed by the chosen Android UPI app, it returns a response as per the format defined in the specification to the package's Android plugin layer.</li>
 <li>The plugin layer parses this response to create a <code>UpiTransactionResponse</code> object that is returned to your calling code. This object clearly indicates the status of the UPI payment, i.e. was it successful, failed or being processed.</li>
@@ -124,7 +146,7 @@
 <h3 id="ios">iOS</h3>
 <h4 id="flow-2">Flow</h4>
 <ul>
-<li>On iOS, the <a href="https://github.com/reeteshranjan/upi_pay/files/6338127/UPI.Linking.Specs_ver.1.6.pdf">UPI Deep Linking And Proximity Integration Specification</a> is implemented using iOS custom schemes.</li>
+<li>On iOS, the <a href="https://github.com/reeteshranjan/flutter_upi_india/files/6338127/UPI.Linking.Specs_ver.1.6.pdf">UPI Deep Linking And Proximity Integration Specification</a> is implemented using iOS custom schemes.</li>
 <li>Each UPI payment app can listen to a payment request of the form <code>upi://pay?...</code> sent by a caller app to iOS.</li>
 <li>The specification does not let you specify the target app's identifier in this request. On iOS, there is no other disambiguation measure available such as any ordering of the UPI payment apps that can be retrieved using any iOS APIs. Hence, it's impossible to know which UPI payment app will be invoked.</li>
 <li>One of the applicable apps gets invoked and it processes the payment. The custom schemes mechanism has no way to return a transaction status to your calling code. The calling code can only know if a UPI payment app was launched successfully or not.</li>
@@ -142,36 +164,55 @@
 <li>You should distinguish discovered and supported-only apps using the mechanism in the above section. The example app can be used for reference.</li>
 </ul>
 <h2 id="upi-apps-functional-status-dynamics">UPI Apps' Functional Status Dynamics</h2>
-<p>UPI standards and systems are evolving, and accordingly behaviour and functionality of the UPI payment apps are changing. See <a href="https://github.com/reeteshranjan/upi_pay/blob/master/APPS.md">Apps</a> for details of current functional status of various applications that were verified by us.</p>
+<p>UPI standards and systems are evolving, and accordingly behaviour and functionality of the UPI payment apps are changing. See <a href="https://github.com/reeteshranjan/flutter_upi_india/blob/master/APPS.md">Apps</a> for details of current functional status of various applications that were verified by us.</p>
 <h3 id="support-for-merchant-and-non-merchant-payments">Support for merchant and non-merchant payments</h3>
-<p>The <a href="https://github.com/reeteshranjan/upi_pay/files/6338127/UPI.Linking.Specs_ver.1.6.pdf">UPI Deep Linking And Proximity Integration Specification</a> is designed for merchant payments. It includes parameters in payment request that can be provided only if the payment was made to a merchant e.g. the merchant code (<code>mc</code> parameter), and a signature (crypto-hash) of the request created using merchant's private key.</p>
+<p>The <a href="https://github.com/reeteshranjan/flutter_upi_india/files/6338127/UPI.Linking.Specs_ver.1.6.pdf">UPI Deep Linking And Proximity Integration Specification</a> is designed for merchant payments. It includes parameters in payment request that can be provided only if the payment was made to a merchant e.g. the merchant code (<code>mc</code> parameter), and a signature (crypto-hash) of the request created using merchant's private key.</p>
 <p>However; various applications have been accepting requests without merchant details and signature and successfully processing payments. Possibly, the dilution could be due to the reason that such a package can only automate filling a payment form, and unless the user verifies the details in the form and enters the UPI pin, no damaging payments can be really made.</p>
 <p>Over last few months, few applications have started changing their behaviour around non-merchant payments and one or more of the following are seen in few apps:</p>
 <ul>
 <li>An implicit "unverified source" warning or a direct warning indicating that merchant data in the request is not correct</li>
-<li>Z7 error, "Transaction Frequency Limit Exceeded": See <a href="https://github.com/reeteshranjan/upi_pay/files/6338492/PHN6WKI7_UPI_Error_and_Response_Codes_V_2_3_1.pdf">UPI Error and Response Codes</a></li>
-<li>U16 error, "Risk Threshold Exceeded", see <a href="https://github.com/reeteshranjan/upi_pay/files/6338492/PHN6WKI7_UPI_Error_and_Response_Codes_V_2_3_1.pdf">UPI Error and Response Codes</a></li>
+<li>Z7 error, "Transaction Frequency Limit Exceeded": See <a href="https://github.com/reeteshranjan/flutter_upi_india/files/6338492/PHN6WKI7_UPI_Error_and_Response_Codes_V_2_3_1.pdf">UPI Error and Response Codes</a></li>
+<li>U16 error, "Risk Threshold Exceeded", see <a href="https://github.com/reeteshranjan/flutter_upi_india/files/6338492/PHN6WKI7_UPI_Error_and_Response_Codes_V_2_3_1.pdf">UPI Error and Response Codes</a></li>
 <li>An implicit "Security error"</li>
 </ul>
 <p>This behaviour sometimes is not consistent even for the same app. For example, WhatsApp successfully completes transactions on iOS; but rejects non-merchant transactions on Android.</p>
-<p>If you believe that your app's users' money is secure via their UPI pin, and you can let them use apps that successfully complete non-merchant transactions, then go ahead and pick the working apps in <a href="https://github.com/reeteshranjan/upi_pay/blob/master/APPS.md">Apps</a> and integrate this package.</p>
+<p>If you believe that your app's users' money is secure via their UPI pin, and you can let them use apps that successfully complete non-merchant transactions, then go ahead and pick the working apps in <a href="https://github.com/reeteshranjan/flutter_upi_india/blob/master/APPS.md">Apps</a> and integrate this package.</p>
 <h3 id="regressions">Regressions</h3>
 <p>It's seen that post the Bank mergers of 2020-21 some of the bank apps have stopped working, even though they are still in Play Store and/or App Store.</p>
 <h3 id="ios-minimum-versions">iOS minimum versions</h3>
 <p>Several BHIM apps have stopped working on &lt;iOS 13.5. This package's iOS support is verified on iPhone with iOS 14+.</p>
 <h3 id="love-to-experiment-yourself">Love to experiment yourself?</h3>
 <p>Default behaviour of the <code>getInstalledUpiApps</code> API is to give you only the completely successfully working UPI apps. You can make the package return other apps by passing relevant values for parameters of this API. Please see API documentation. To support this experimentation, we would add further tweaking to allow you to access UPI apps not seen and supported by this package shortly on Android.</p>
+<h2 id="contributors-">Contributors ✨</h2>
+<p>Thanks to these wonderful people (<a href="https://allcontributors.org/docs/en/emoji-key">emoji key</a>):</p>
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- markdownlint-disable -->
+<table>
+<tbody><tr>
+<td align="center"><a href="https://drenther.xyz"><img src="https://avatars3.githubusercontent.com/u/12991390?v=4?s=100" width="100px;" alt=""><br><sub><b>Soumyajit Pathak</b></sub></a><br><a href="https://github.com/drenther/flutter_upi_india/commits?author=drenther" title="Code">💻</a> <a href="#ideas-drenther" title="Ideas, Planning, &amp; Feedback">🤔</a> <a href="https://github.com/drenther/flutter_upi_india/pulls?q=is%3Apr+reviewed-by%3Adrenther" title="Reviewed Pull Requests">👀</a> <a href="https://github.com/drenther/flutter_upi_india/commits?author=drenther" title="Documentation">📖</a> <a href="#maintenance-drenther" title="Maintenance">🚧</a> <a href="#research-drenther" title="Research">🔬</a></td>
+<td align="center"><a href="http://www.piaxis.tech/"><img src="https://avatars0.githubusercontent.com/u/5516599?v=4?s=100" width="100px;" alt=""><br><sub><b>Reetesh Ranjan</b></sub></a><br><a href="https://github.com/drenther/flutter_upi_india/commits?author=reeteshranjan" title="Code">💻</a> <a href="#ideas-reeteshranjan" title="Ideas, Planning, &amp; Feedback">🤔</a> <a href="https://github.com/drenther/flutter_upi_india/pulls?q=is%3Apr+reviewed-by%3Areeteshranjan" title="Reviewed Pull Requests">👀</a> <a href="https://github.com/drenther/flutter_upi_india/commits?author=reeteshranjan" title="Documentation">📖</a> <a href="#maintenance-reeteshranjan" title="Maintenance">🚧</a> <a href="#research-reeteshranjan" title="Research">🔬</a></td>
+<td align="center"><a href="https://sharadchand.com"><img src="https://avatars3.githubusercontent.com/u/29191131?v=4?s=100" width="100px;" alt=""><br><sub><b>Sharad Chand</b></sub></a><br><a href="https://github.com/drenther/flutter_upi_india/commits?author=pepsighan" title="Code">💻</a> <a href="#ideas-pepsighan" title="Ideas, Planning, &amp; Feedback">🤔</a> <a href="#research-pepsighan" title="Research">🔬</a></td>
+<td align="center"><a href="https://github.com/masterashu"><img src="https://avatars0.githubusercontent.com/u/39612799?v=4?s=100" width="100px;" alt=""><br><sub><b>Adam Markon</b></sub></a><br><a href="https://github.com/drenther/flutter_upi_india/commits?author=masterashu" title="Code">💻</a></td>
+</tr>
+</tbody></table>
+<!-- markdownlint-restore -->
+<!-- prettier-ignore-end -->
+<p>This project follows the all-contributors specification. Contributions of any kind welcome and will be recognised!</p>
+<h2 id="other-related-solutions">Other related solutions</h2>
+<ul>
+<li><a href="https://pub.dev/packages/upi_india">upi_india</a> <a href="https://github.com/azhar1038/UPI-Plugin-Flutter">(repo)</a> - Another solid flutter package for payment gateway free UPI integration. We often share issues faced / solution approaches and more. Go check them out as well!</li>
+</ul>
 </section>
 
 
       <section class="summary">
           <h2>Libraries</h2>
         <dl>
-          <dt id="upi_pay">
-  <span class="name"><a href="upi_pay/upi_pay-library.html">upi_pay</a></span> 
+          <dt id="flutter_upi_india">
+  <span class="name"><a href="flutter_upi_india/flutter_upi_india-library.html">flutter_upi_india</a></span> 
 
 </dt>
-<dd> 
+<dd>
 </dd>
 
         </dl>
@@ -187,14 +228,14 @@
 </header>
 
 <ol class="breadcrumbs gt-separated dark hidden-l" id="sidebar-nav">
-  <li><a href="https://github.com/drenther/upi_pay">upi_pay package</a></li>
+  <li><a href="https://github.com/princeflutterdev/flutter_upi_india">flutter_upi_india package</a></li>
 </ol>
 
 
-    <h5 class="hidden-xs"><span class="package-name">upi_pay</span> <span class="package-kind">package</span></h5>
+    <h5 class="hidden-xs"><span class="package-name">flutter_upi_india</span> <span class="package-kind">package</span></h5>
     <ol>
       <li class="section-title">Libraries</li>
-      <li><a href="upi_pay/upi_pay-library.html">upi_pay</a></li>
+      <li><a href="flutter_upi_india/flutter_upi_india-library.html">flutter_upi_india</a></li>
 </ol>
 
   </div>
@@ -206,8 +247,8 @@
 
 <footer>
   <span class="no-break">
-    upi_pay
-      1.0.0
+    flutter_upi_india
+      0.0.1
   </span>
 
   
@@ -216,7 +257,7 @@
 
 
 <script src="static-assets/highlight.pack.js?v1"></script>
-<script src="static-assets/script.js?v1"></script>
+<script src="static-assets/docs.dart.js"></script>
 
 
 

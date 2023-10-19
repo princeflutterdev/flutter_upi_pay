@@ -1,9 +1,9 @@
 import 'package:universal_io/io.dart' as io;
 import 'package:flutter/services.dart';
-import 'package:flutter_upi_pay/src/transaction_details.dart';
+import 'package:flutter_upi_india/src/transaction_details.dart';
 
 class UpiMethodChannel {
-  MethodChannel _channel = MethodChannel('upi_pay');
+  MethodChannel _channel = MethodChannel('flutter_upi_india');
   static final _singleton = UpiMethodChannel._inner();
   factory UpiMethodChannel() {
     return _singleton;

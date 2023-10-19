@@ -1,6 +1,6 @@
 import 'package:decimal/decimal.dart';
-import 'package:flutter_upi_pay/src/applications.dart';
-import 'package:flutter_upi_pay/src/exceptions.dart';
+import 'package:flutter_upi_india/src/applications.dart';
+import 'package:flutter_upi_india/src/exceptions.dart';
 
 class TransactionDetails {
   static const String _currency = 'INR';

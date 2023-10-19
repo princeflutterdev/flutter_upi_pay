@@ -2,7 +2,7 @@ import 'dart:io';
 import 'dart:math';
 
 import 'package:flutter/material.dart';
-import 'package:flutter_upi_pay/upi_pay.dart';
+import 'package:flutter_upi_india/flutter_upi_india.dart';
 
 void main() => runApp(App());
 

@@ -1,4 +1,4 @@
-package com.trident.flutter_upi_pay_example
+package com.trident.flutter_upi_india_example
 
 import io.flutter.embedding.android.FlutterActivity
 

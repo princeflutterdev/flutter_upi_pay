@@ -1,7 +1,7 @@
 import 'dart:typed_data';
 
 import 'package:universal_io/io.dart' as io;
-import 'package:flutter_upi_pay/src/applications.dart';
+import 'package:flutter_upi_india/src/applications.dart';
 import 'package:flutter/material.dart';
 
 /// Represents a UPI payment app and more relevant information.
@@ -39,7 +39,7 @@ class ApplicationMeta {
     } else if (io.Platform.isIOS) {
       return Image.asset(
         'assets/apps/ios/${upiApplication.iosBundleId}.png',
-        package: 'upi_pay',
+        package: 'flutter_upi_india',
         width: dimension,
         height: dimension,
       );

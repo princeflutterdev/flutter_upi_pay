@@ -2,17 +2,23 @@ import 'package:flutter/services.dart';
 import 'package:flutter_test/flutter_test.dart';
 
 void main() {
-  const MethodChannel channel = MethodChannel('upi_pay');
+  const MethodChannel channel = MethodChannel('flutter_upi_india');
+  handler(MethodCall methodCall) async {
+    return '42';
+  }
 
-  setUp(() {
-    channel.setMockMethodCallHandler((MethodCall methodCall) async {
-      return '42';
-    });
-  });
+  TestWidgetsFlutterBinding.ensureInitialized();
 
-  tearDown(() {
-    channel.setMockMethodCallHandler(null);
-  });
+  TestDefaultBinaryMessengerBinding.instance.defaultBinaryMessenger
+      .setMockMethodCallHandler(channel, handler);
+
+  // setUp(() {
+  //   channel.setMockMethodCallHandler();
+  // });
+
+  // tearDown(() {
+  //   channel.setMockMethodCallHandler(null);
+  // });
 
   test('getPlatformVersion', () async {
     print('Dummy Test');
