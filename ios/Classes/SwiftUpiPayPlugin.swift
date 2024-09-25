@@ -3,7 +3,7 @@ import UIKit
 
 public class SwiftUpiPayPlugin: NSObject, FlutterPlugin {
   public static func register(with registrar: FlutterPluginRegistrar) {
-    let channel = FlutterMethodChannel(name: "upi_pay", binaryMessenger: registrar.messenger())
+    let channel = FlutterMethodChannel(name: "flutter_upi_india", binaryMessenger: registrar.messenger())
     let instance = SwiftUpiPayPlugin()
     registrar.addMethodCallDelegate(instance, channel: channel)
   }

@@ -551,6 +551,11 @@ class UpiApplication {
     iosBundleId: 'com.yesbank',
     appName: 'Yes Mobile',
   );
+  static final samsungPayMini = UpiApplication(
+    androidPackageName: 'com.samsung.android.brdigitalaccount',
+    iosBundleId: 'com.samsung.android.brdigitalaccount',
+    appName: 'Samsung Pay Mini',
+  );
 
   /// YuvaPay from UDMA Technologies
   static final yuvaPay = UpiApplication(

@@ -1,10 +1,10 @@
 import 'dart:convert';
 
 import 'package:universal_io/io.dart' as io;
-import 'package:upi_pay/src/applications.dart';
-import 'package:upi_pay/src/method_channel.dart';
-import 'package:upi_pay/src/status.dart';
-import 'package:upi_pay/src/meta.dart';
+import 'package:flutter_upi_india/src/applications.dart';
+import 'package:flutter_upi_india/src/method_channel.dart';
+import 'package:flutter_upi_india/src/status.dart';
+import 'package:flutter_upi_india/src/meta.dart';
 
 class UpiApplicationDiscovery implements _PlatformDiscoveryBase {
   final discovery = io.Platform.isAndroid
@@ -22,9 +22,9 @@ class UpiApplicationDiscovery implements _PlatformDiscoveryBase {
   Future<List<ApplicationMeta>> discover({
     required UpiMethodChannel upiMethodChannel,
     required Map<UpiApplication, UpiApplicationStatus> applicationStatusMap,
-    UpiApplicationDiscoveryAppPaymentType paymentType:
+    UpiApplicationDiscoveryAppPaymentType paymentType =
         UpiApplicationDiscoveryAppPaymentType.nonMerchant,
-    UpiApplicationDiscoveryAppStatusType statusType:
+    UpiApplicationDiscoveryAppStatusType statusType =
         UpiApplicationDiscoveryAppStatusType.working,
   }) async {
     if (io.Platform.isAndroid || io.Platform.isIOS) {
@@ -50,9 +50,9 @@ class _AndroidDiscovery implements _PlatformDiscoveryBase {
   Future<List<ApplicationMeta>> discover({
     required UpiMethodChannel upiMethodChannel,
     required Map<UpiApplication, UpiApplicationStatus> applicationStatusMap,
-    UpiApplicationDiscoveryAppPaymentType paymentType:
+    UpiApplicationDiscoveryAppPaymentType paymentType =
         UpiApplicationDiscoveryAppPaymentType.nonMerchant,
-    UpiApplicationDiscoveryAppStatusType statusType:
+    UpiApplicationDiscoveryAppStatusType statusType =
         UpiApplicationDiscoveryAppStatusType.working,
   }) async {
     final appsList = await upiMethodChannel.getInstalledUpiApps();
@@ -123,9 +123,9 @@ class _IosDiscovery implements _PlatformDiscoveryBase {
   Future<List<ApplicationMeta>> discover({
     required UpiMethodChannel upiMethodChannel,
     required Map<UpiApplication, UpiApplicationStatus> applicationStatusMap,
-    UpiApplicationDiscoveryAppPaymentType paymentType:
+    UpiApplicationDiscoveryAppPaymentType paymentType =
         UpiApplicationDiscoveryAppPaymentType.nonMerchant,
-    UpiApplicationDiscoveryAppStatusType statusType:
+    UpiApplicationDiscoveryAppStatusType statusType =
         UpiApplicationDiscoveryAppStatusType.working,
   }) async {
     Map<String, UpiApplication> discoveryMap = {};
@@ -199,9 +199,9 @@ abstract class _PlatformDiscoveryBase {
   Future<List<ApplicationMeta>> discover({
     required UpiMethodChannel upiMethodChannel,
     required Map<UpiApplication, UpiApplicationStatus> applicationStatusMap,
-    UpiApplicationDiscoveryAppPaymentType paymentType:
+    UpiApplicationDiscoveryAppPaymentType paymentType =
         UpiApplicationDiscoveryAppPaymentType.nonMerchant,
-    UpiApplicationDiscoveryAppStatusType statusType:
+    UpiApplicationDiscoveryAppStatusType statusType =
         UpiApplicationDiscoveryAppStatusType.working,
   });
 }

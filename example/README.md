@@ -1,6 +1,6 @@
-# upi_pay_example
+# flutter_upi_india_example
 
-Demonstrates how to use the upi_pay plugin.
+Demonstrates how to use the flutter_upi_india plugin.
 
 ## Getting Started
 

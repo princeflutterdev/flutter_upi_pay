@@ -1,15 +1,15 @@
 import 'dart:async';
 
 // for meta
-import 'package:upi_pay/src/discovery.dart';
-import 'package:upi_pay/src/meta.dart';
-import 'package:upi_pay/src/method_channel.dart';
-import 'package:upi_pay/src/response.dart';
-import 'package:upi_pay/src/status.dart';
-import 'package:upi_pay/src/applications.dart';
-import 'package:upi_pay/src/exceptions.dart';
-import 'package:upi_pay/src/transaction.dart';
-import 'package:upi_pay/src/transaction_details.dart';
+import 'package:flutter_upi_india/src/discovery.dart';
+import 'package:flutter_upi_india/src/meta.dart';
+import 'package:flutter_upi_india/src/method_channel.dart';
+import 'package:flutter_upi_india/src/response.dart';
+import 'package:flutter_upi_india/src/status.dart';
+import 'package:flutter_upi_india/src/applications.dart';
+import 'package:flutter_upi_india/src/exceptions.dart';
+import 'package:flutter_upi_india/src/transaction.dart';
+import 'package:flutter_upi_india/src/transaction_details.dart';
 
 /// Helps with getting installed UPI apps and making payments using them.
 ///
@@ -93,9 +93,9 @@ class UpiPay {
   /// [paymentType] must be [UpiApplicationDiscoveryAppPaymentType.nonMerchant]
   /// for now. Setting it to any other value will lead to [UnsupportedError].
   static Future<List<ApplicationMeta>> getInstalledUpiApplications({
-    UpiApplicationDiscoveryAppPaymentType paymentType:
+    UpiApplicationDiscoveryAppPaymentType paymentType =
         UpiApplicationDiscoveryAppPaymentType.nonMerchant,
-    UpiApplicationDiscoveryAppStatusType statusType:
+    UpiApplicationDiscoveryAppStatusType statusType =
         UpiApplicationDiscoveryAppStatusType.working,
   }) async {
     if (paymentType != UpiApplicationDiscoveryAppPaymentType.nonMerchant) {
