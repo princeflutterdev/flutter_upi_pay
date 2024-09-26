@@ -14,9 +14,9 @@ EXTERNAL SOURCES:
     :path: ".symlinks/plugins/flutter_upi_india/ios"
 
 SPEC CHECKSUMS:
-  Flutter: 434fef37c0980e73bb6479ef766c45957d4b510c
-  flutter_upi_india: 16008b0cbb4d248b895e587661eab2446926c51e
+  Flutter: e0871f40cf51350855a761d2e70bf5af5b9b5de7
+  flutter_upi_india: c4fa4c0783b172550a9f0a5b6d39091271a678e0
 
-PODFILE CHECKSUM: aafe91acc616949ddb318b77800a7f51bffa2a4c
+PODFILE CHECKSUM: 7be2f5f74864d463a8ad433546ed1de7e0f29aef
 
-COCOAPODS: 1.10.0
+COCOAPODS: 1.15.2
