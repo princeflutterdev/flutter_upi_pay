@@ -17,7 +17,7 @@ Add this package to your flutter project's `pubspec.yaml` as a dependency as fol
 ```yaml
 dependencies:
   ...
-  flutter_upi_india: ^0.0.1
+  flutter_upi_india: ^0.0.4
 ```
 
 Import the package as follows:
