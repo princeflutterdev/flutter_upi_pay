@@ -1,6 +1,6 @@
 name: flutter_upi_india
 description: A flutter plugin to launch UPI payment applications on Android and iOS towards making UPI payments.
-version: 0.0.2
+version: 0.0.3
 
 homepage: https://github.com/princeflutterdev/flutter_upi_pay
 
@@ -11,8 +11,8 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  decimal: ^1.2.0
-  universal_io: ^2.0.4
+  decimal: ^3.0.2
+  universal_io: ^2.2.2
 
 dev_dependencies:
   flutter_test:

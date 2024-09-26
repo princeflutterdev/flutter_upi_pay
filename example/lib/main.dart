@@ -1,6 +1,7 @@
 import 'dart:io';
 import 'dart:math';
 
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_upi_india/flutter_upi_india.dart';
 
@@ -79,7 +80,9 @@ class _ScreenState extends State<Screen> {
     });
 
     final transactionRef = Random.secure().nextInt(1 << 32).toString();
-    print("Starting transaction with id $transactionRef");
+    if (kDebugMode) {
+      print("Starting transaction with id $transactionRef");
+    }
 
     final a = await UpiPay.initiateTransaction(
       amount: _amountController.text,
@@ -90,8 +93,6 @@ class _ScreenState extends State<Screen> {
       transactionNote: 'UPI Payment',
       // merchantCode: '7372',
     );
-
-    print(a);
   }
 
   @override
