@@ -7,6 +7,8 @@ import 'package:flutter_upi_india/flutter_upi_india.dart';
 void main() => runApp(App());
 
 class App extends StatelessWidget {
+  const App({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -21,6 +23,8 @@ class App extends StatelessWidget {
 }
 
 class Screen extends StatefulWidget {
+  const Screen({super.key});
+
   @override
   _ScreenState createState() => _ScreenState();
 }
@@ -186,15 +190,15 @@ class _ScreenState extends State<Screen> {
           Expanded(
             child: MaterialButton(
               onPressed: () async => await _onTap(_apps![0]),
+              color: Theme.of(context).colorScheme.secondary,
+              height: 48,
+              shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(6)),
               child: Text('Initiate Transaction',
                   style: Theme.of(context)
                       .textTheme
                       .labelLarge!
                       .copyWith(color: Colors.white)),
-              color: Theme.of(context).colorScheme.secondary,
-              height: 48,
-              shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(6)),
             ),
           ),
         ],
@@ -258,21 +262,21 @@ class _ScreenState extends State<Screen> {
 
   GridView _discoverableAppsGrid() {
     List<ApplicationMeta> metaList = [];
-    _apps!.forEach((e) {
+    for (var e in _apps!) {
       if (e.upiApplication.discoveryCustomScheme != null) {
         metaList.add(e);
       }
-    });
+    }
     return _appsGrid(metaList);
   }
 
   GridView _nonDiscoverableAppsGrid() {
     List<ApplicationMeta> metaList = [];
-    _apps!.forEach((e) {
+    for (var e in _apps!) {
       if (e.upiApplication.discoveryCustomScheme == null) {
         metaList.add(e);
       }
-    });
+    }
     return _appsGrid(metaList);
   }
 
