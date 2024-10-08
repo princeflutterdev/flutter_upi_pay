@@ -42,7 +42,7 @@ class _ScreenState extends State<Screen> {
   @override
   void initState() {
     super.initState();
-    _upiAddressController.text = "negi.prince227@okicici";
+    _upiAddressController.text = "ADD_UPI_ID_HERE";
     _amountController.text =
         (Random.secure().nextDouble() * 10).toStringAsFixed(2);
 
