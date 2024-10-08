@@ -1,3 +1,7 @@
+## 0.0.5
+
+- Gradle Issue Fix
+
 ## 0.0.4
 
 - dependencies update
