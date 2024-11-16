@@ -1,3 +1,7 @@
+## 0.0.6
+
+- UPI fixes
+
 ## 0.0.5
 
 - Gradle Issue Fix

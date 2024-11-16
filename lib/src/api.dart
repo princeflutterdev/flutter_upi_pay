@@ -59,6 +59,7 @@ class UpiPay {
     required String transactionRef,
     required String amount,
     String? url,
+    String? merchantCode,
     String? transactionNote,
   }) async {
     final transactionDetails = TransactionDetails(
@@ -68,6 +69,7 @@ class UpiPay {
       transactionRef: transactionRef,
       amount: amount,
       url: url,
+      merchantCode: merchantCode,
       transactionNote: transactionNote,
     );
     return await _transactionHelper.transact(_channel, transactionDetails);

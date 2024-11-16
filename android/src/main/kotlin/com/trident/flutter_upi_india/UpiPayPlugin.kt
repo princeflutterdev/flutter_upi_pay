@@ -61,7 +61,7 @@ class UpiPayPlugin: FlutterPlugin, MethodCallHandler, ActivityAware, PluginRegis
        * Some UPI apps extract incorrect format VPA due to url encoding of `pa` parameter.
        * For example, the VPA 'abc@upi' gets url encoded as 'abc%40upi' and is extracted as
        * 'abc 40upi' by these apps. The URI building logic is changed to avoid URL encoding
-       * of the value of 'pa' parameter. - Reetesh
+       * of the value of 'pa' parameter. - Prince
       */
       var uriStr: String? = "upi://pay?pa=" + pa +
               "&pn=" + Uri.encode(pn) +
@@ -79,7 +79,7 @@ class UpiPayPlugin: FlutterPlugin, MethodCallHandler, ActivityAware, PluginRegis
       }
       uriStr += "&mode=00" // &orgid=000000"
       val uri = Uri.parse(uriStr)
-      // Log.d("flutter_upi_india", "initiateTransaction URI: " + uri.toString())
+       Log.d("flutter_upi_india", "initiateTransaction URI: " + uri.toString())
 
       val intent = Intent(Intent.ACTION_VIEW, uri)
       intent.setPackage(app)

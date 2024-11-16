@@ -84,7 +84,7 @@ class _ScreenState extends State<Screen> {
       print("Starting transaction with id $transactionRef");
     }
 
-    final a = await UpiPay.initiateTransaction(
+    await UpiPay.initiateTransaction(
       amount: _amountController.text,
       app: app.upiApplication,
       receiverName: 'Sharad',

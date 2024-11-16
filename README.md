@@ -4,7 +4,7 @@
 
 Find installed UPI payment apps on your phone and make payments using any one of them.
 
-Package implements [UPI Deep Linking And Proximity Integration Specification](https://github.com/reeteshranjan/flutter_upi_india/files/6338127/UPI.Linking.Specs_ver.1.6.pdf).
+Package implements [UPI Deep Linking And Proximity Integration Specification](https://github.com/reeteshranjan/upi_pay/files/6338127/UPI.Linking.Specs_ver.1.6.pdf).
 
 | Android                                                                                                                         | iOS                                                                                                                         |
 | ------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------- |
@@ -17,7 +17,7 @@ Add this package to your flutter project's `pubspec.yaml` as a dependency as fol
 ```yaml
 dependencies:
   ...
-  flutter_upi_india: ^0.0.4
+  flutter_upi_india: ^0.0.6
 ```
 
 Import the package as follows:
@@ -88,6 +88,7 @@ Future doUpiTransation(ApplicationMeta appMeta) {
     receiverUpiAddress: 'john@doe',
     transactionRef: 'UPITXREF0001',
     transactionNote: 'A UPI Transaction',
+     // merchantCode: '7372',
   );
   print(response.status);
 }
@@ -99,7 +100,7 @@ Future doUpiTransation(ApplicationMeta appMeta) {
 
 #### Flow
 
-- On Android, the [UPI Deep Linking And Proximity Integration Specification](https://github.com/reeteshranjan/flutter_upi_india/files/6338127/UPI.Linking.Specs_ver.1.6.pdf) is implemented using Intents.
+- On Android, the [UPI Deep Linking And Proximity Integration Specification](https://github.com/reeteshranjan/upi_pay/files/6338127/UPI.Linking.Specs_ver.1.6.pdf) is implemented using Intents.
 - An Intent call with transaction request parameters includes the specific UPI app to be invoked.
 - Post the UPI transaction being processed by the chosen Android UPI app, it returns a response as per the format defined in the specification to the package's Android plugin layer.
 - The plugin layer parses this response to create a `UpiTransactionResponse` object that is returned to your calling code. This object clearly indicates the status of the UPI payment, i.e. was it successful, failed or being processed.
@@ -112,7 +113,7 @@ It is advised that you implement a server-side payment verification on top of th
 
 #### Flow
 
-- On iOS, the [UPI Deep Linking And Proximity Integration Specification](https://github.com/reeteshranjan/flutter_upi_india/files/6338127/UPI.Linking.Specs_ver.1.6.pdf) is implemented using iOS custom schemes.
+- On iOS, the [UPI Deep Linking And Proximity Integration Specification](https://github.com/reeteshranjan/upi_pay/files/6338127/UPI.Linking.Specs_ver.1.6.pdf) is implemented using iOS custom schemes.
 - Each UPI payment app can listen to a payment request of the form `upi://pay?...` sent by a caller app to iOS.
 - The specification does not let you specify the target app's identifier in this request. On iOS, there is no other disambiguation measure available such as any ordering of the UPI payment apps that can be retrieved using any iOS APIs. Hence, it's impossible to know which UPI payment app will be invoked.
 - One of the applicable apps gets invoked and it processes the payment. The custom schemes mechanism has no way to return a transaction status to your calling code. The calling code can only know if a UPI payment app was launched successfully or not.
@@ -140,7 +141,7 @@ UPI standards and systems are evolving, and accordingly behaviour and functional
 
 ### Support for merchant and non-merchant payments
 
-The [UPI Deep Linking And Proximity Integration Specification](https://github.com/reeteshranjan/flutter_upi_india/files/6338127/UPI.Linking.Specs_ver.1.6.pdf) is designed for merchant payments. It includes parameters in payment request that can be provided only if the payment was made to a merchant e.g. the merchant code (`mc` parameter), and a signature (crypto-hash) of the request created using merchant's private key.
+The [UPI Deep Linking And Proximity Integration Specification](https://github.com/reeteshranjan/upi_pay/files/6338127/UPI.Linking.Specs_ver.1.6.pdf) is designed for merchant payments. It includes parameters in payment request that can be provided only if the payment was made to a merchant e.g. the merchant code (`mc` parameter), and a signature (crypto-hash) of the request created using merchant's private key.
 
 However; various applications have been accepting requests without merchant details and signature and successfully processing payments. Possibly, the dilution could be due to the reason that such a package can only automate filling a payment form, and unless the user verifies the details in the form and enters the UPI pin, no damaging payments can be really made.
 

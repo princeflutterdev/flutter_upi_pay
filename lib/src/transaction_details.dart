@@ -13,7 +13,7 @@ class TransactionDetails {
   final String currency;
   final Decimal amount;
   final String? url;
-  final String merchantCode;
+  final String? merchantCode;
   final String? transactionNote;
 
   TransactionDetails({
@@ -69,8 +69,8 @@ class TransactionDetails {
     if (url != null && url!.isNotEmpty) {
       uri += '&url=${Uri.encodeComponent(url!)}';
     }
-    if (merchantCode.isNotEmpty) {
-      uri += '&mc=${Uri.encodeComponent(merchantCode)}';
+    if (merchantCode!.isNotEmpty) {
+      uri += '&mc=${Uri.encodeComponent(merchantCode!)}';
     }
     return uri;
   }

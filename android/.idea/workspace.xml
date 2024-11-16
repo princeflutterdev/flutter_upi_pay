@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="NONE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="d40f5a3b-f7d6-4590-9dcc-06d5aa71b2dd" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../.dart_tool/package_config.json" beforeDir="false" afterPath="$PROJECT_DIR$/../.dart_tool/package_config.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.pubignore" beforeDir="false" afterPath="$PROJECT_DIR$/../.pubignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CHANGELOG.md" beforeDir="false" afterPath="$PROJECT_DIR$/../CHANGELOG.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../example/.dart_tool/flutter_build/28dbd4b3011a291598cbd14ba5f51062/.filecache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../example/.dart_tool/flutter_build/28dbd4b3011a291598cbd14ba5f51062/App.framework/App" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../example/.dart_tool/flutter_build/28dbd4b3011a291598cbd14ba5f51062/app.dill" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../example/.dart_tool/flutter_build/28dbd4b3011a291598cbd14ba5f51062/debug_ios_bundle_flutter_assets.stamp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../example/.dart_tool/flutter_build/28dbd4b3011a291598cbd14ba5f51062/debug_universal_framework.stamp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../example/.dart_tool/flutter_build/28dbd4b3011a291598cbd14ba5f51062/debug_unpack_ios.stamp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../example/.dart_tool/flutter_build/28dbd4b3011a291598cbd14ba5f51062/flutter_assets.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../example/.dart_tool/flutter_build/28dbd4b3011a291598cbd14ba5f51062/gen_dart_plugin_registrant.stamp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../example/.dart_tool/flutter_build/28dbd4b3011a291598cbd14ba5f51062/gen_localizations.stamp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../example/.dart_tool/flutter_build/28dbd4b3011a291598cbd14ba5f51062/kernel_snapshot.stamp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../example/.dart_tool/flutter_build/28dbd4b3011a291598cbd14ba5f51062/kernel_snapshot_native_assets.stamp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../example/.dart_tool/flutter_build/28dbd4b3011a291598cbd14ba5f51062/kernel_snapshot_program.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../example/.dart_tool/flutter_build/28dbd4b3011a291598cbd14ba5f51062/kernel_snapshot_program.stamp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../example/.dart_tool/flutter_build/28dbd4b3011a291598cbd14ba5f51062/native_assets.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../example/.dart_tool/flutter_build/28dbd4b3011a291598cbd14ba5f51062/native_assets.dill" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../example/.dart_tool/flutter_build/28dbd4b3011a291598cbd14ba5f51062/native_assets.stamp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../example/.dart_tool/flutter_build/28dbd4b3011a291598cbd14ba5f51062/native_assets.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../example/.dart_tool/flutter_build/28dbd4b3011a291598cbd14ba5f51062/outputs.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../example/.dart_tool/flutter_build/28dbd4b3011a291598cbd14ba5f51062/program.dill" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../example/.dart_tool/flutter_build/65e3d8d9b6df72ff0f0328ed54101ca1/.filecache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../example/.dart_tool/flutter_build/65e3d8d9b6df72ff0f0328ed54101ca1/App.framework/App" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../example/.dart_tool/flutter_build/65e3d8d9b6df72ff0f0328ed54101ca1/app.dill" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../example/.dart_tool/flutter_build/65e3d8d9b6df72ff0f0328ed54101ca1/debug_ios_bundle_flutter_assets.stamp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../example/.dart_tool/flutter_build/65e3d8d9b6df72ff0f0328ed54101ca1/debug_universal_framework.stamp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../example/.dart_tool/flutter_build/65e3d8d9b6df72ff0f0328ed54101ca1/debug_unpack_ios.stamp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../example/.dart_tool/flutter_build/65e3d8d9b6df72ff0f0328ed54101ca1/flutter_assets.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../example/.dart_tool/flutter_build/65e3d8d9b6df72ff0f0328ed54101ca1/gen_dart_plugin_registrant.stamp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../example/.dart_tool/flutter_build/65e3d8d9b6df72ff0f0328ed54101ca1/gen_localizations.stamp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../example/.dart_tool/flutter_build/65e3d8d9b6df72ff0f0328ed54101ca1/kernel_snapshot.stamp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../example/.dart_tool/flutter_build/65e3d8d9b6df72ff0f0328ed54101ca1/kernel_snapshot_native_assets.stamp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../example/.dart_tool/flutter_build/65e3d8d9b6df72ff0f0328ed54101ca1/kernel_snapshot_program.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../example/.dart_tool/flutter_build/65e3d8d9b6df72ff0f0328ed54101ca1/kernel_snapshot_program.stamp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../example/.dart_tool/flutter_build/65e3d8d9b6df72ff0f0328ed54101ca1/native_assets.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../example/.dart_tool/flutter_build/65e3d8d9b6df72ff0f0328ed54101ca1/native_assets.dill" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../example/.dart_tool/flutter_build/65e3d8d9b6df72ff0f0328ed54101ca1/native_assets.stamp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../example/.dart_tool/flutter_build/65e3d8d9b6df72ff0f0328ed54101ca1/native_assets.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../example/.dart_tool/flutter_build/65e3d8d9b6df72ff0f0328ed54101ca1/outputs.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../example/.dart_tool/flutter_build/65e3d8d9b6df72ff0f0328ed54101ca1/program.dill" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../example/.dart_tool/package_config.json" beforeDir="false" afterPath="$PROJECT_DIR$/../example/.dart_tool/package_config.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../example/.dart_tool/package_config_subset" beforeDir="false" afterPath="$PROJECT_DIR$/../example/.dart_tool/package_config_subset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../example/.dart_tool/version" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../example/.flutter-plugins-dependencies" beforeDir="false" afterPath="$PROJECT_DIR$/../example/.flutter-plugins-dependencies" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../example/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../example/pubspec.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib/src/api.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../lib/src/api.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib/src/transaction_details.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../lib/src/transaction_details.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../pubspec.yaml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 1
+}]]></component>
+  <component name="ProjectId" id="2opMwx8cpks3V2hmkbu68cHlvQN" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.cidr.known.project.marker": "true",
+    "RunOnceActivity.readMode.enableVisualFormatting": "true",
+    "android.gradle.sync.needed": "true",
+    "cf.first.check.clang-format": "false",
+    "cidr.known.project.marker": "true",
+    "dart.analysis.tool.window.visible": "false",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "show.migrate.to.gradle.popup": "false"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d40f5a3b-f7d6-4590-9dcc-06d5aa71b2dd" name="Changes" comment="" />
+      <created>1731562307790</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1731562307790</updated>
+    </task>
+    <servers />
+  </component>
+</project>
