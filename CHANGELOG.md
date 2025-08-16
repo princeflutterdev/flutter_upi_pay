@@ -1,3 +1,7 @@
+## 1.0.0
+
+- UPI fixes, new code changes
+
 ## 0.0.6
 
 - UPI fixes
