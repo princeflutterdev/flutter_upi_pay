@@ -2,6 +2,8 @@
 
 ## [![version](https://img.shields.io/pub/v/flutter_upi_india)](https://pub.dev/packages/flutter_upi_india)
 
+### Curruntly Working in android only with some specific banks. Open for Query and Discussion.
+
 Find installed UPI payment apps on your phone and make payments using any one of them.
 
 Package implements [UPI Deep Linking And Proximity Integration Specification](https://github.com/reeteshranjan/upi_pay/files/6338127/UPI.Linking.Specs_ver.1.6.pdf).
@@ -17,7 +19,7 @@ Add this package to your flutter project's `pubspec.yaml` as a dependency as fol
 ```yaml
 dependencies:
   ...
-  flutter_upi_india: ^1.0.0
+  flutter_upi_india: ^1.0.1
 ```
 
 Import the package as follows:
